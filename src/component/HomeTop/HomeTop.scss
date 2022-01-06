@@ -1,0 +1,108 @@
+@import "../../assets/scss/varabels.scss";
+
+.homeTop {
+
+    &__head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 24px;
+
+        &-box {
+            span {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                margin: 0;
+                color: #E0E6E9;
+            }
+        }
+
+        &-title {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            margin: 0;
+        }
+
+        &-form {
+            input {
+                background: #2D303E;
+                border: 1px solid #393C49;
+                box-sizing: border-box;
+                border-radius: 8px;
+                padding: 14px 14px 14px 42px;
+                outline: none;
+                color: #fff;
+                background-image: url("../../assets/img/search.png");
+                background-repeat: no-repeat;
+                background-position: left 14px center;
+            }
+        }
+    }
+
+    .nav__list {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        border-bottom: 1px solid #393C49;
+        margin-bottom: 24px;
+    }
+
+    .nav__item {
+        position: relative;
+        margin-right: 32px;
+
+        &-link {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 140%;
+            padding-bottom: 13px;
+            display: inline-block;
+        }
+
+        .active{
+            color: $orange-color;
+            &::before {
+                content: '';
+                width: 50%;
+                height: 4px;
+                border-radius: 8px;
+                background-color: $orange-color;
+                position: absolute;
+                bottom: -2px;
+            }
+        }
+    }
+
+    .homeTop__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-title {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 140%;
+        }
+
+        select {
+            appearance: none;
+            padding: 15px;
+            padding-left: 44px;
+            background: #1F1D2B;
+            border: 1px solid #393C49;
+            box-sizing: border-box;
+            border-radius: 8px;
+            color: #fff;
+            outline: none;
+            background-image: url("../../assets/img/drop.png");
+            background-repeat: no-repeat;
+            background-position: left 14px center;
+        }
+    }
+}

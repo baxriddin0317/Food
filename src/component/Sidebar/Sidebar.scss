@@ -1,0 +1,100 @@
+@import "../../assets/scss/varabels.scss";
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0 24px 12px;
+    width: 105px;
+    height: 100%;
+    background-color: $dark-color;
+
+    &__logo {
+        display: inline-block;
+        padding-left: 12px;
+        margin-bottom: 24px;
+    }
+
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__item {
+
+        &-link {
+            display: inline-block;
+            background-color: $dark-color;
+            padding: 13px 25px 11px 12px;
+            margin-bottom: 20px;
+            border-radius: 12px 0px 0px 12px;
+            position: relative;
+
+            &::before {
+                content: url("../../assets/img/curve1.png");
+                display: none;
+                position: absolute;
+                top: -15px;
+                right: -2px;
+            }
+
+            &::after {
+                content: url("../../assets/img/curve2.png");
+                display: none;
+                position: absolute;
+                bottom: -17px;
+                right: -2px;
+            }
+
+            span {
+                width: 56px;
+                height: 56px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $dark-color;
+                // box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.32);
+                border-radius: 8px;
+
+                svg {
+                    path{
+                        fill: $orange-color;
+                    }
+                }
+            }
+        }
+
+        .link-active {
+            background-color: $main-color;
+
+            &::before {
+                display: inline-block;
+            }
+
+            &::after {
+                display: inline-block;
+            }
+
+            span {
+                background-color: $orange-color;
+                box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.32);
+
+                svg {
+                    path{
+                        fill: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    &__btn {
+        width: 56px;
+        height: 56px;
+        border: none;
+        background: none;
+        margin-left: 12px;
+        margin-top: auto;
+        cursor: pointer;
+    }
+}

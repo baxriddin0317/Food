@@ -1,0 +1,59 @@
+@import "./assets/scss/normalize.scss";
+@import "./assets/scss/varabels.scss";
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Barlow', 'Arial', sans-serif;
+    line-height: 1.5;
+    background-color: $main-color;
+    color: #fff;
+}
+
+body > div {
+    height: 100%;
+}
+
+.container {
+    min-width: 11200px;
+    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hiddin {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.app {
+    height: 100%;
+    display: flex;
+
+    &__content {
+        width: 100%;
+    }
+}
