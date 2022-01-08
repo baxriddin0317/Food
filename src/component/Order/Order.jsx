@@ -9,7 +9,6 @@ import { ModalContext } from "../Context/ModalContenxt";
 function Order() {
     const {orders, setOrders} = useContext(Context);
     const {modal, setModal} = useContext(ModalContext);
-    // console.log(orders.length);
     return (
         <>
             <h2 className="order__title">Orders #34562</h2>
@@ -65,7 +64,7 @@ function Order() {
             </div>
 
             <button className="order__btn" onClick={() => {
-                orders.length > 0 ? setModal(true) : setModal(false);
+                orders.length > 0 ? setModal(!modal) : setModal(false);
                 
             }}>
                 Continue to Payment
