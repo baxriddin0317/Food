@@ -6,12 +6,8 @@ function HomeContent() {
     return (
         <div> 
             <Routes>
-                <Route path="/" element={<h2>salom</h2>} exact />
-                <Route path="/cold-dishes" element={<Cold />} />
-                <Route path="/soup" element={<p>Soup</p>} />
-                <Route path="/grill" element={<p>grill</p>} />
-                <Route path="/appetizer" element={<p>appetxer</p>}/>
-                <Route path="/dessert" element={<p>Dessert</p>}/>
+                <Route path="/" element={<Cold />} />
+                <Route path="/:foodType" element={<Cold />} />
             </Routes>
         </div>
     )

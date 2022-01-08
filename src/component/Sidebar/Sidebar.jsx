@@ -43,6 +43,13 @@ function Sidebar() {
                     </Link>    
                 </li>
                 <li className="sidebar__item">
+                    <Link className='sidebar__item-link' to="/graph" onClick={handleClass}>
+                        <span>
+                            <Graph />
+                        </span>
+                    </Link>    
+                </li>
+                <li className="sidebar__item">
                     <Link className='sidebar__item-link' to="/notificition" onClick={handleClass}>
                         <span>
                             <Notficitoin />
@@ -53,13 +60,6 @@ function Sidebar() {
                     <Link className='sidebar__item-link' to="/message" onClick={handleClass}>
                         <span>
                             <Message />
-                        </span>
-                    </Link>    
-                </li>
-                <li className="sidebar__item">
-                    <Link className='sidebar__item-link' to="/graph" onClick={handleClass}>
-                        <span>
-                            <Graph />
                         </span>
                     </Link>    
                 </li>

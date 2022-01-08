@@ -10,7 +10,8 @@
     }
 
     &__order {
-        width: 410px;
+        min-width: 410px;
         background-color: $dark-color;
+        padding: 24px;
     }
 }
