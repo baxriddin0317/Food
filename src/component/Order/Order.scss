@@ -108,7 +108,7 @@
         box-sizing: border-box;
         border-radius: 8px;
         padding: 14px 19px;
-        margin-left: 61px;
+        margin-left: auto;
     }
 
     &-sum {
@@ -118,7 +118,7 @@
         font-size: 16px;
         line-height: 140%;
         overflow-x: hidden;
-        width: 60px;
+        width: 40px;
     }
 
     &-bottom {
@@ -167,6 +167,7 @@
 }
 
 .order__btn {
+    border: none;
     background: #EA7C69;
     box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.3);
     border-radius: 8px;
@@ -178,4 +179,9 @@
     font-size: 14px;
     line-height: 140%;
     color: #FAFAFA;
+
+    &:active{
+        background: #e76d57;
+        box-shadow: 0px 8px 24px rgba(218, 105, 85, 0.3);        
+    }
 }

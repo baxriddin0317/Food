@@ -14,6 +14,7 @@ function Home() {
             <div className="home__order">
                 <Order />
             </div>
+            
         </div>
     )
 }

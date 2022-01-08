@@ -3,9 +3,12 @@ import "./Order.scss";
 
 import React, { useContext } from 'react'
 import { Context } from "../Context/Context";
+import Delete from "../../Libra/Svgs/Delete";
+import { ModalContext } from "../Context/ModalContenxt";
 
 function Order() {
     const {orders, setOrders} = useContext(Context);
+    const {modal, setModal} = useContext(ModalContext);
     // console.log(orders.length);
     return (
         <>
@@ -44,7 +47,9 @@ function Order() {
                             <button onClick={() => {
                                 setOrders(orders.filter(food => food.id !== order.id));
                                 order.number = 0;
-                            }}>x</button>
+                            }}>
+                                {<Delete />}
+                            </button>
                       </div>
                   </li>
               ))}  
@@ -59,7 +64,10 @@ function Order() {
                 <p>$21.03</p>
             </div>
 
-            <button className="order__btn">
+            <button className="order__btn" onClick={() => {
+                orders.length > 0 ? setModal(true) : setModal(false);
+                
+            }}>
                 Continue to Payment
             </button>
         </>

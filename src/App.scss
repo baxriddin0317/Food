@@ -52,6 +52,7 @@ body > div {
 .app {
     height: 100%;
     display: flex;
+    position: relative;
 
     &__content {
         width: 100%;
