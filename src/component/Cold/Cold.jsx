@@ -6,10 +6,6 @@ import "./Cold.scss"
 import Foods from "../../assets/Baza/Baza";
 import { Context } from '../Context/Context';
 
-// const orderClick = (e) => {
-//     console.log(e.currentTarget);
-// }
-
 function Cold() {
     const { foodType } = useParams();
     const {orders, setOrders} = useContext(Context);

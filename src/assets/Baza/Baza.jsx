@@ -1,12 +1,3 @@
-// import Ovqat1 from "../img/ovqat1";
-// import Ovqat2 from "../img/ovqat2";
-// import Ovqat3 from "../img/ovqat3";
-// import Ovqat4 from "../img/ovqat4";
-// import Ovqat5 from "../img/ovqat5";
-// import Ovqat6 from "../img/ovqat6";
-// import Ovqat7 from "../img/ovqat7";
-// import Ovqat8 from "../img/ovqat8";
-
 const Foods = [
     {
         id: 1,

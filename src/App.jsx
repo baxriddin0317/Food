@@ -11,7 +11,7 @@ import { ModalContext } from "./component/Context/ModalContenxt";
 
 function App() {
 
-  const {modal, setModal} = useContext(ModalContext);
+  const { modal } = useContext(ModalContext);
 
   return (
   <div className='app'>

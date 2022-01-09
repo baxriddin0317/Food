@@ -21,7 +21,7 @@ function Modal() {
 
     return (
         <div ref={refModal} className='modal modal-active' onClick={e => {
-                if(refModal.current == e.target){
+                if(refModal.current === e.target){
                     setModal(!modal);
                 }
             
