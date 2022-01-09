@@ -54,15 +54,20 @@
     }
 }
 
-.order__list {
-    list-style-type: none;
-    padding: 0;
-    height: 450px;
+.orderList{
     margin-bottom: 24px;
-    overflow-y: scroll;
     border-bottom: 1px solid #393C49;
     border-top: 1px solid #393C49;
-    padding: 24px 0;
+    height: 450px;
+    box-sizing: border-box;
+}
+
+.order__list {
+    padding: 24px 0;    
+    list-style-type: none;
+    height: 410px;
+    padding: 0;
+    overflow-y: scroll;
 
     &::-webkit-scrollbar{
         width: 0;

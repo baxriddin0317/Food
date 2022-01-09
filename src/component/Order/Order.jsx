@@ -25,34 +25,36 @@ function Order() {
                 <em>Price</em>
             </div>
             
-            {orders.length > 0 && <ul className="order__list">
-              {orders.map(order => (
-                  <li className="order__list-item" key={order.id}>
-                      <div className="order__list-block">
-                          <img src={order.img} alt="order-food" className="order__list-block-img" width="45" />
-                          <div className="order__list-content">
-                              <p>{order.title}</p>
-                              <small>${order.money}</small>
-                          </div>
-                          <span className="order__list-num">
-                              {order.number}
-                          </span>
-                          <span className="order__list-sum">
-                              ${order.number * order.money}
-                          </span>
-                      </div>
-                      <div className="order__list-bottom">
-                            <input type="text" placeholder="Order note"/>
-                            <button onClick={() => {
-                                setOrders(orders.filter(food => food.id !== order.id));
-                                order.number = 0;
-                            }}>
-                                {<Delete />}
-                            </button>
-                      </div>
-                  </li>
-              ))}  
-            </ul>}
+            <div className="orderList">
+                {orders.length > 0 && <ul className="order__list">
+                {orders.map(order => (
+                    <li className="order__list-item" key={order.id}>
+                        <div className="order__list-block">
+                            <img src={order.img} alt="order-food" className="order__list-block-img" width="45" />
+                            <div className="order__list-content">
+                                <p>{order.title}</p>
+                                <small>${order.money}</small>
+                            </div>
+                            <span className="order__list-num">
+                                {order.number}
+                            </span>
+                            <span className="order__list-sum">
+                                ${order.number * order.money}
+                            </span>
+                        </div>
+                        <div className="order__list-bottom">
+                                <input type="text" placeholder="Order note"/>
+                                <button onClick={() => {
+                                    setOrders(orders.filter(food => food.id !== order.id));
+                                    order.number = 0;
+                                }}>
+                                    {<Delete />}
+                                </button>
+                        </div>
+                    </li>
+                ))}  
+                </ul>}
+            </div>
 
             <div className="order__result">
                 <small className="order__result-text">Discount</small>
