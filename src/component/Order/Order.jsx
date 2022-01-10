@@ -62,7 +62,7 @@ function Order() {
             </div>
             <div className="order__result">
                 <small className="order__result-text">Sub total</small>
-                <p>$21.03</p>
+                <p>$21.02</p>
             </div>
 
             <button className="order__btn" onClick={() => {

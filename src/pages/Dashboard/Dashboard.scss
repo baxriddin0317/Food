@@ -1,0 +1,16 @@
+@import "../../assets/scss/varabels.scss";
+
+.dashboard {
+    height: 100%;
+    display: flex;
+    padding: 24px;
+
+    &__content {
+        flex: 2;
+        padding-right: 24px;
+    }
+
+    &__right {
+        width: 372px;
+    }
+}

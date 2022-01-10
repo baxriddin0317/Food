@@ -1,0 +1,94 @@
+@import "../../assets/scss/varabels.scss";
+.most {
+    background: $dark-color;
+    padding: 24px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #393C49;
+        padding-top: 20px;
+        margin-bottom: 20px;
+
+        &-title {
+            margin: 0;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 140%;
+        }
+
+        select {
+            appearance: none;
+            padding: 15px;
+            padding-left: 44px;
+            background: #1F1D2B;
+            border: 1px solid #393C49;
+            box-sizing: border-box;
+            border-radius: 8px;
+            color: #fff;
+            outline: none;
+            background-image: url("../../assets/img/drop.png");
+            background-repeat: no-repeat;
+            background-position: left 14px center;
+        }
+    }
+
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 16px;
+        height: 230px;
+        overflow: hidden;
+
+        &-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 24px;
+
+            img {
+                width: 53px;
+                height: 53px;
+                border-radius: 50%;
+                margin-right: 16px;
+            }
+        }
+
+        &-title {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 130%;
+            color: #E0E6E9;
+            margin: 0;
+        }
+
+        &-text {
+            font-size: 12px;
+            line-height: 140%;
+            color: #ABBBC2;
+        }
+
+    }
+
+    &__btn {
+        width: 100%;
+        border: 1px solid #EA7C69;
+        box-sizing: border-box;
+        border-radius: 8px;
+        background: none;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 140%;
+        padding: 14px;
+        cursor: pointer;
+        color: #EA7C69;
+
+        &:active{
+            background: $orange-color;
+            color: #fff;
+        }
+    }
+}

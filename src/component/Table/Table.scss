@@ -1,0 +1,131 @@
+.table {
+    width: 100%;
+    background: #1F1D2B;
+    border-radius: 8px;  
+    padding: 33px 16px 10px 24px;
+
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 24px;
+
+        h2 {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 140%;
+            margin: 0;
+        }
+
+        span {
+            cursor: pointer;
+            background: #1F1D2B;
+            border: 1px solid #393C49;
+            box-sizing: border-box;
+            border-radius: 8px !important;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 130%;
+            width: 128px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    
+    &__tab {
+        width: 100%;
+        text-align-last: left;
+        display: table;
+    }
+
+    &__tr {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+        border-bottom: 1px solid #393C49;
+        
+        &-td {
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 140%;
+            &:nth-child(1){
+                width: 130px;
+                text-align: left;
+            }
+            &:nth-child(2){
+                width: 150px;
+
+            }
+        }
+    }
+    
+    &__tb {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-align-last: left;
+        padding: 10px 0;
+    }
+
+    &__block {
+        height: 340px;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar{
+            width: 0;
+        }
+    }
+
+    &__td {
+        img {
+            width: 32px;
+            height: 32px;
+            margin-right: 8px;
+        }
+        &:nth-child(1){
+            width: 150px;
+        }
+        &:nth-child(2){
+            width: 150px;
+        }
+        &:nth-child(3){
+            width: 80px;
+        }
+        &:nth-child(4){
+            width: 50px;
+        }
+        
+    }
+
+    span {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 130%;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+    
+    .Complate {
+        background: rgba(107, 226, 190, 0.24);
+        padding: 4px 12px;
+        color: #50D1AA;
+    }
+    
+    .Preparing {
+        background: rgba(146, 144, 254, 0.2);
+        color: #9290FE;
+        padding: 4px 12px;
+    }
+    
+    .Pending {
+        padding: 4px 17px;
+        background: rgba(255, 181, 114, 0.2);
+        color: #FFB572; 
+    }
+
+}
