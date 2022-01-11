@@ -9,6 +9,13 @@ import { ModalContext } from "../Context/ModalContenxt";
 function Order() {
     const {orders, setOrders} = useContext(Context);
     const {modal, setModal} = useContext(ModalContext);
+
+    let sum = 0;
+    for(let i of orders){
+        sum = sum + i.money*i.number;
+    }
+
+
     return (
         <>
             <h2 className="order__title">Orders #34562</h2>
@@ -62,7 +69,7 @@ function Order() {
             </div>
             <div className="order__result">
                 <small className="order__result-text">Sub total</small>
-                <p>$21.02</p>
+                <p>${sum}</p>
             </div>
 
             <button className="order__btn" onClick={() => {
