@@ -31,7 +31,8 @@ function Cold() {
                         <span className='cold__list-theRest'>{ food.theRest } Bowls available</span>
                     </li>
                     ))}                
-                </ul>
+            
+            </ul>
             }
         </div>
     )

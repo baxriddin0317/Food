@@ -1,0 +1,96 @@
+@import '../../assets/scss/varabels.scss';
+
+.edit {
+    padding: 24px;
+
+    &__head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 24px;
+
+        &-title {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 140%;
+        }
+
+        &-cate {
+            border: 1px solid #393C49;
+            box-sizing: border-box;
+            filter: drop-shadow(0px 8px 24px rgba(146, 136, 224, 0.3));
+            border-radius: 8px;
+            padding: 14px 16px 14px 44px;
+            background-image: url("../../assets/img/option.png");
+            background-repeat: no-repeat;
+            background-position: left 16px center;
+            cursor: pointer;
+        }
+    }
+
+    .nav__list {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        border-bottom: 1px solid #393C49;
+        margin-bottom: 24px;
+    }
+
+    .nav__item {
+        position: relative;
+        margin-right: 32px;
+
+        &-link {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 140%;
+            padding-bottom: 13px;
+            display: inline-block;
+        }
+
+        .active-link{
+            color: $orange-color;
+            &::before {
+                content: '';
+                width: 50%;
+                height: 4px;
+                border-radius: 8px;
+                background-color: $orange-color;
+                position: absolute;
+                bottom: -2px;
+            }
+        }
+    }
+
+    &__btngroup {
+        display: flex;
+        align-items: center;
+        margin-top: 24px;
+        button {
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 14px;
+            border-radius: 8px;
+            line-height: 140%;
+            box-sizing: border-box;
+            border: 1px solid #EA7C69;
+        }
+    }
+
+    &__close {
+        color: #EA7C69;
+        background: none;
+        padding: 14px 34px;
+    }
+
+    &__save {
+        color: #fff;
+        background: #EA7C69;
+        padding: 14px 43px;
+        margin-left: 10px;
+    }
+}

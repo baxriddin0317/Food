@@ -1,0 +1,102 @@
+@import '../../assets/scss/varabels.scss';
+.card {
+    height: 450px;
+    overflow-y: scroll;
+    height: 450px;
+
+    &::-webkit-scrollbar{
+        width: 0;
+    }
+
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 24px;
+
+        &-item {
+            margin-bottom: 24px;
+            background: #1F1D2B;
+            padding: 24px 24px 0 24px;
+            text-align: center;
+            border: 1px dashed #393C49;
+            border-radius: 8px;
+            width: 221px;
+            height: 299px;
+            position: relative;
+        }
+
+        &-img {
+            width: 143px;
+            height: 130px;
+            margin-bottom: 16px;
+            border-radius: 50%;
+        }
+
+        &-title {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 130%;
+            margin: 0;
+            margin-bottom: 8px;
+        }
+
+        &-text {
+            font-size: 14px;
+            line-height: 140%;
+            color: #ABBBC2;
+        }
+
+        &-dod {
+            display: inline-block;
+            width: 5px;
+            margin: 0 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: #fff;
+        }
+
+        &-btn {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            left: 0;
+            background: rgba(80,52,58, 0.6);
+            cursor: pointer;
+            opacity: 0.24;
+            border: none;
+            border-radius: 0px 0px 8px 8px;
+            padding: 10px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 140%;
+            color: $orange-color;
+        }
+    }
+
+    &__add {
+        background: #1F1D2B;
+        border: 1px dashed #EA7C69;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #EA7C69;
+        width: 221px;
+        height: 299px;
+        margin-bottom: 24px;
+        svg {
+            cursor: pointer;
+            margin-bottom: 10px;
+            fill: #EA7C69 !important;
+        }
+    }
+}

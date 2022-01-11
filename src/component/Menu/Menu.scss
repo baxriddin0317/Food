@@ -1,0 +1,73 @@
+@import "../../assets/scss/varabels.scss";
+
+.menu {
+    background: #1F1D2B;
+    border-radius: 8px;
+    width: 275px;
+    height: 723px;
+
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__item {
+        list-style: none;
+
+        &-link {
+            padding: 24px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            svg {
+                margin-right: 10px;
+
+                path {
+                    fill: #fff;
+                }
+            }
+        }
+
+        &-title {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 130%;
+            display: block;
+            color: #FFFFFF;
+        } 
+
+        &-text {
+            font-size: 12px;
+            line-height: 140%;
+            color: #ABBBC2;
+        }
+
+        .active {
+            background: rgba(234, 124, 105, 0.26);
+            position: relative;
+
+            svg {
+                path {
+                    fill: $orange-color;
+                }
+            }
+
+            .menu__item-title {
+                color: $orange-color;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 30%;
+                width: 4px;
+                height: 39px;
+                background: #EA7C69;
+                border-radius: 30px;;
+            }
+        }
+
+    }   
+}
