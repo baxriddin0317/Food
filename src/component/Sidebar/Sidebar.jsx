@@ -9,7 +9,7 @@ import Discount from '../../Libra/Svgs/Discount';
 import Message from "../../Libra/Svgs/Message";
 import Notficitoin from "../../Libra/Svgs/Notficition";
 import Setting from "../../Libra/Svgs/Setting";
-import Graph from "../../Libra/Svgs/Graph";
+	import Graph from "../../Libra/Svgs/Graph";
 import Logaut from "../../Libra/Svgs/Logaut";
 
 function Sidebar() {
