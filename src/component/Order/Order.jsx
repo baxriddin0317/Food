@@ -37,7 +37,7 @@ function Order() {
                 {orders.map(order => (
                     <li className="order__list-item" key={order.id}>
                         <div className="order__list-block">
-                            <img src={order.img} alt="order-food" className="order__list-block-img" width="45" />
+                            <img src={order.img} alt="order-food" className="order__list-block-img" width={45} height={45} />
                             <div className="order__list-content">
                                 <p>{order.title}</p>
                                 <small>${order.money}</small>

@@ -25,7 +25,7 @@ function Cold() {
                             
                             food.number = food.number ? food.number + 1 : 1;
                         }}>
-                        <img className='cold__list-img' src={food.img} alt='food' width={150} />
+                        <img className='cold__list-img' src={food.img} alt='food' width={132} height={132} />
                         <h2 className='cold__list-title'>{ food.title }</h2>
                         <span className='cold__list-money'>${ food.money }</span>
                         <span className='cold__list-theRest'>{ food.theRest } Bowls available</span>
